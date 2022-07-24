@@ -17,7 +17,7 @@ db.filmes.insertMany(
     Diretor:'David Lynch',
     Elenco:'Naomi Watts, Laura Helena Harring',
     Ano:2001,
-    Premio: 18},
+    Premios: 18},
 
     {Nome:'king kong',
     Diretor:'Peter Jackson',
