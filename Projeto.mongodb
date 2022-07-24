@@ -144,14 +144,11 @@ db.filmes.createIndex({Ano: 1})
 
 use('projeto')
 db.filmes.aggregate(
-   [
-     {
+  [
+    {
       $group:
-        {_id: null,  totalAmount: {$sum:'$Premios'}}
-    }
-   ]
-)
-
+       {_id: null, sum_val:{$sum:"$Premios"}}
+  }])
 
 // 12 
 // Na coleção `sample_mflix` do Mongo Atlas DB, crie uma consulta que retorne os filmes com os seus
