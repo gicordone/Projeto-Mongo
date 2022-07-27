@@ -147,7 +147,7 @@ db.filmes.aggregate(
   [
     {
       $group:
-       {_id: null, sum_val:{$sum:"$Premios"}}
+       {_id: null, totalAmont:{$sum:"$Premios"}}
   }])
 
 // 12 
